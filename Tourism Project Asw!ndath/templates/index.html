@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Product Prediction</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Please Enter Your Details and Preferences</h2>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="city_tier">City Tier:</label>
+                <select id="city_tier" name="city_tier" required>
+                    <option value="" disabled selected>Select </option>
+                    <option value="1">Tier 1</option>
+                    <option value="2">Tier 2</option>
+                    <option value="3">Tier 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="occupation">Occupation:</label>
+                <select id="occupation" name="occupation" required>
+                    <option value="" disabled selected>Select </option>
+                    <option value="Salaried">Salaried</option>
+                    <option value="Free Lancer">Free Lancer</option>
+                    <option value="Small Business">Small Business</option>
+                    <option value="Large Business">Large Business</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select </option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="num_person_visiting">Number of Persons Visiting:</label>
+                <input type="number" id="num_person_visiting" name="num_person_visiting" required>
+            </div>
+            <div class="form-group">
+                <label for="preferred_property_star">Preferred Property Star:</label>
+                <select id="preferred_property_star" name="preferred_property_star" required>
+                    <option value="" disabled selected>Select </option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Star</option>
+                    <option value="3">3 Star</option>
+                    <option value="4">4 Star</option>
+                    <option value="5">5 Star</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="marital_status">Marital Status:</label>
+                <select id="marital_status" name="marital_status" required>
+                    <option value="" disabled selected>Select </option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Unmarried">Unmarried</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="num_children_visiting">Number of Children Visiting:</label>
+                <input type="number" id="num_children_visiting" name="num_children_visiting" required>
+            </div>
+            <div class="form-group">
+                <label for="designation">Designation:</label>
+                <select id="designation" name="designation" required>
+                    <option value="" disabled selected>Select </option>
+                    <option value="VP">Vice President</option>
+                    <option value="AVP">Assistant Vice President</option>
+                    <option value="Senior Manager">Senior Manager</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Executive">Executive</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="monthly_income">Monthly Income:</label>
+                <input type="number" id="monthly_income" name="monthly_income" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="predict-button">Predict</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
